@@ -2,9 +2,17 @@
 
 Example of how to use Elixir and Hound to run browser automation tests.
 
-These tests are in run in parallel and can be run locally or remotely connecting to Browserstack. 
+These tests are in run in parallel and can be run locally or remotely connecting to Browserstack.
 
 ## Running
+
+Install dependencies first using
+
+```bash
+mix deps.get
+```
+
+Be sure to have Elixir 1.4 or higher.
 
 ### Locally
 
@@ -23,6 +31,7 @@ You can set these variables in an `.env` file like
 ```bash
 export USER="example"
 export KEY="example"
+export HOST="http://${USER}:${KEY}@hub-cloud.browserstack.com"
 ```
 
 and then run:

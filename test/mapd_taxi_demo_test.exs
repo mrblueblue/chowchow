@@ -9,6 +9,7 @@ defmodule MapDTaxiDemoTest do
 
   test "the truth" do
     navigate_to(@url)
+    assert element_displayed?({:css, ".mapboxgl-map"})
     assert 1 + 1 == 2
   end
 end

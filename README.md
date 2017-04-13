@@ -1,12 +1,14 @@
 # Chowchow
 
-Example of how to use Elixir and Hound to run browser automation tests. These tests are in run in parallel and can be run locally or remotely connecting to Browserstack. 
+Example of how to use Elixir and Hound to run browser automation tests.
+
+These tests are in run in parallel and can be run locally or remotely connecting to Browserstack. 
 
 ## Running
 
 ### Locally
 
-Assuming you have `selenium` server with the Chrome driver running on port `4444`:
+Assuming you have Selenium server with the Chrome driver running on port `4444`:
 
 ```bash
 WEBDRIVER=selenium ENV=local mix test
@@ -16,7 +18,7 @@ WEBDRIVER=selenium ENV=local mix test
 
 The script relies on the environmental varialbes `USER` and `KEY`, which represent your Browserstack username and access key.
 
-You can set these varialbes in an `.env` file like
+You can set these variables in an `.env` file like
 
 ```bash
 export USER="example"
